@@ -1,0 +1,234 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pycopancore.model_components.adaptive_voter_opinion_formation.implementation package &#8212; pycopancore 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pycopancore-model-components-adaptive-voter-opinion-formation-implementation-package">
+<h1>pycopancore.model_components.adaptive_voter_opinion_formation.implementation package<a class="headerlink" href="#pycopancore-model-components-adaptive-voter-opinion-formation-implementation-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture">
+<span id="pycopancore-model-components-adaptive-voter-opinion-formation-implementation-culture-module"></span><h2>pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture module<a class="headerlink" href="#module-pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture" title="Permalink to this headline">¶</a></h2>
+<p>Culture process taxon mixing class template.</p>
+<p>TODO: adjust or fill in code and documentation wherever marked by “TODO:”,
+then remove these instructions</p>
+<dl class="class">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture">
+<em class="property">class </em><code class="descclassname">pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.</code><code class="descname">Culture</code><span class="sig-paren">(</span><em>*</em>, <em>rewiring</em>, <em>opinion_change=1.0</em>, <em>timestep=0.1</em>, <em>possible_opinions={0</em>, <em>1}</em>, <em>active_neighbor_only=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pycopancore.model_components.adaptive_voter_opinion_formation.html#pycopancore.model_components.adaptive_voter_opinion_formation.interface.Culture" title="pycopancore.model_components.adaptive_voter_opinion_formation.interface.Culture"><code class="xref py py-class docutils literal notranslate"><span class="pre">pycopancore.model_components.adaptive_voter_opinion_formation.interface.Culture</span></code></a></p>
+<p>Culture process taxon mixin implementation class.</p>
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.analyze_graph">
+<code class="descname">analyze_graph</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture.analyze_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.analyze_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>analyze the graph so speed-ups can be used later</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.clear_graph_analysis">
+<code class="descname">clear_graph_analysis</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture.clear_graph_analysis"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.clear_graph_analysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>clear everything that was created during analyze_graph</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.configure">
+<em class="property">classmethod </em><code class="descname">configure</code><span class="sig-paren">(</span><em>*</em>, <em>update_mode</em>, <em>synchronous_updates=1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture.configure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>configure the adaptive voter opinion formation model component</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>update_mode</strong> (<em>element of Enum Cultur.update_modes</em>) – chooses between the basic and the fast update mode. The fast update mode is preferred but needs the nodes of the acquaintance_network to stay the same</li>
+<li><strong>synchronous_updates</strong> (<em>(</em><em>optional</em><em>) </em><em>positive int</em>) – how many opinion updates should be done at once</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.multiple_updates">
+<code class="descname">multiple_updates</code><em class="property"> = 1</em><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.multiple_updates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.next_update_time">
+<code class="descname">next_update_time</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture.next_update_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.next_update_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.opinion_update_basic">
+<code class="descname">opinion_update_basic</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture.opinion_update_basic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.opinion_update_basic" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the aquaintance network following the adaptive voter model prescription by (Holme, Newman - 2006)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.opinion_update_fast">
+<code class="descname">opinion_update_fast</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture.opinion_update_fast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.opinion_update_fast" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the aquaintance network following the adaptive voter model prescription by (Holme, Newman - 2006)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.opinion_update_multiple">
+<code class="descname">opinion_update_multiple</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture.opinion_update_multiple"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.opinion_update_multiple" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.processes">
+<code class="descname">processes</code><em class="property"> = [opinion update]</em><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.processes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.update_modes">
+<em class="property">class </em><code class="descname">update_modes</code><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/culture.html#Culture.update_modes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.update_modes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>update modes for the adaptive voter model: basic or fast</p>
+<dl class="attribute">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.update_modes.basic">
+<code class="descname">basic</code><em class="property"> = 0</em><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.update_modes.basic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.update_modes.fast">
+<code class="descname">fast</code><em class="property"> = 1</em><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.culture.Culture.update_modes.fast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual">
+<span id="pycopancore-model-components-adaptive-voter-opinion-formation-implementation-individual-module"></span><h2>pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual module<a class="headerlink" href="#module-pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual" title="Permalink to this headline">¶</a></h2>
+<p>Individual entity type class template.</p>
+<p>TODO: adjust or fill in code and documentation wherever marked by “TODO:”,
+then remove these instructions</p>
+<dl class="class">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual">
+<em class="property">class </em><code class="descclassname">pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.</code><code class="descname">Individual</code><span class="sig-paren">(</span><em>*</em>, <em>initial_opinion</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/individual.html#Individual"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pycopancore.model_components.adaptive_voter_opinion_formation.html#pycopancore.model_components.adaptive_voter_opinion_formation.interface.Individual" title="pycopancore.model_components.adaptive_voter_opinion_formation.interface.Individual"><code class="xref py py-class docutils literal notranslate"><span class="pre">pycopancore.model_components.adaptive_voter_opinion_formation.interface.Individual</span></code></a></p>
+<p>Individual entity type mixin implementation class.</p>
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual.__lt__">
+<code class="descname">__lt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/individual.html#Individual.__lt__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>make objects sortable, so big sorted lists can be used for quick look-ups</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual.deactivate">
+<code class="descname">deactivate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/individual.html#Individual.deactivate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual.deactivate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deactivate an individual.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual.processes">
+<code class="descname">processes</code><em class="property"> = []</em><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual.processes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual.reactivate">
+<code class="descname">reactivate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pycopancore/model_components/adaptive_voter_opinion_formation/implementation/individual.html#Individual.reactivate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycopancore.model_components.adaptive_voter_opinion_formation.implementation.individual.Individual.reactivate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reactivate an individual.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pycopancore.model_components.adaptive_voter_opinion_formation.implementation">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pycopancore.model_components.adaptive_voter_opinion_formation.implementation" title="Permalink to this headline">¶</a></h2>
+<p>Model component implementation subpackage template.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_reference.html">API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_reference.html#pycopancore">pycopancore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials by role</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../step_by_step.html">Step by step tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../framework_documentation/index.html">Framework documentation</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_api/pycopancore.model_components.adaptive_voter_opinion_formation.implementation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, the copan team.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/_api/pycopancore.model_components.adaptive_voter_opinion_formation.implementation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
